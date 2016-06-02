@@ -13,6 +13,7 @@
         <MenuBar>
             <Menu text="File">
                 <MenuItem text="Open"    onAction="#open"/>
+                <MenuItem text="Refresh" onAction="#refresh"/>
                 <MenuItem text="Save As" onAction="#saveAs"/>
                 <MenuItem text="Quit"    onAction="javafx.application.Platform.exit();"/>
             </Menu>

@@ -26,14 +26,16 @@ import java.io.IOException;
 
 public class Controller
 {
-    private Stage     stage;
-    private FrameMask frameMask;
+    private Stage      stage;
+    private FrameMask  frameMask;
 
     @FXML
     private BorderPane root;
 
     @FXML
-    private ImageView maskFrameImageView;
+    private ImageView  maskFrameImageView;
+
+    private File       inputFile;
 
     public void init(Stage stage)
     {
@@ -64,12 +66,23 @@ public class Controller
     private void open()
     {
         FileChooser fileChooser = new FileChooser();
-        File file = fileChooser.showOpenDialog(stage);
-        if (null != file)
+        inputFile = fileChooser.showOpenDialog(stage);
+        openFile();
+    }
+
+    @FXML
+    private void refresh()
+    {
+        openFile();
+    }
+
+    private void openFile()
+    {
+        if (null != inputFile)
         {
             try
             {
-                JSONObject config          = new JSONObject(new JSONTokener(new FileInputStream(file)));
+                JSONObject config          = new JSONObject(new JSONTokener(new FileInputStream(inputFile)));
 
                 int        width           = config.getInt("width");
                 int        height          = config.getInt("height");
