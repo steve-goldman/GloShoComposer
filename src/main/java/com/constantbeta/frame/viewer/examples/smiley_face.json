@@ -1,0 +1,40 @@
+{
+  "width": 800,
+  "height": 600,
+  "maskLayer": {
+    "type": "UnionLayer",
+    "config": {
+      "maskLayers": [
+        {
+          "type": "CircleLayer",
+          "config": {
+            "centerX": 280,
+            "centerY": 200,
+            "innerRadius": 0,
+            "outerRadius": 40
+          }
+        },
+        {
+          "type": "CircleLayer",
+          "config": {
+            "centerX": 520,
+            "centerY": 200,
+            "innerRadius": 0,
+            "outerRadius": 40
+          }
+        },
+        {
+          "type": "ArcLayer",
+          "config": {
+            "centerX": 400,
+            "centerY": 100,
+            "innerRadius": 350,
+            "outerRadius": 400,
+            "startAngle": 3.93,
+            "endAngle": 5.5
+          }
+        }
+      ]
+    }
+  }
+}
