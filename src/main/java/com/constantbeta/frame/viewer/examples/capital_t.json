@@ -1,0 +1,29 @@
+{
+  "width": 800,
+  "height": 600,
+  "maskLayer": {
+    "type": "UnionLayer",
+    "config": {
+      "maskLayers": [
+        {
+          "type": "GridBoxLayer",
+          "config": {
+            "numRows": 5,
+            "numColumns": 1,
+            "row": 0,
+            "column": 0
+          }
+        },
+        {
+          "type": "GridBoxLayer",
+          "config": {
+            "numRows": 1,
+            "numColumns": 5,
+            "row": 0,
+            "column": 2
+          }
+        }
+      ]
+    }
+  }
+}

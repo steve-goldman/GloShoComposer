@@ -1,0 +1,12 @@
+{
+  "width": 800,
+  "height": 600,
+  "maskLayer": {
+    "type": "CheckerboardLayer",
+    "config": {
+      "numRows": 8,
+      "numColumns": 8,
+      "topLeftOn": false
+    }
+  }
+}
