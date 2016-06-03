@@ -10,7 +10,7 @@ public class CircleLayer extends MaskLayerBase
     {
         super(width, height);
 
-        this.delegate = new ArcLayer(width, height, centerX, centerY, innerRadius, outerRadius, 0, 2 * Math.PI);
+        this.delegate = new ArcLayer(width, height, centerX, centerY, innerRadius, outerRadius, 0, 360);
     }
 
     public CircleLayer(int width, int height, JSONObject config)

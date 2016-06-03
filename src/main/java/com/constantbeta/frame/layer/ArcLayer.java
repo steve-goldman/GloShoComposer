@@ -75,7 +75,7 @@ public class ArcLayer extends MaskLayerBase
     {
         int    deltaX = x - centerX;
         int    deltaY = centerY - y;
-        double angle  = Math.atan2(deltaY, deltaX);
+        double angle  = Math.atan2(deltaY, deltaX) * 180 / Math.PI;
 
         if (angle > 0)
         {
@@ -83,7 +83,7 @@ public class ArcLayer extends MaskLayerBase
         }
         else
         {
-            return angle + 2 * Math.PI;
+            return angle + 360;
         }
     }
 }

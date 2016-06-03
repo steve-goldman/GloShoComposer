@@ -30,8 +30,8 @@
             "centerY": 100,
             "innerRadius": 350,
             "outerRadius": 400,
-            "startAngle": 3.93,
-            "endAngle": 5.5
+            "startAngle": 225,
+            "endAngle": 315
           }
         }
       ]
