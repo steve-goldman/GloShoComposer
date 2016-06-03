@@ -5,6 +5,8 @@ import com.constantbeta.frame.FrameMaskUtils;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -30,6 +32,15 @@ public class ShowPlayerController
     @FXML
     private ImageView  imageView;
 
+    @FXML
+    private Button     playButton;
+
+    @FXML
+    private Button     pauseButton;
+
+    @FXML
+    private Label      timeLabel;
+
     private File       inputFile;
     private ShowFrames showFrames;
     private ShowTimer  showTimer;
@@ -39,6 +50,8 @@ public class ShowPlayerController
     {
         this.stage = stage;
         root.setBackground(new Background(new BackgroundFill(Color.CORNFLOWERBLUE, CornerRadii.EMPTY, Insets.EMPTY)));
+        playButton.setDisable(true);
+        pauseButton.setDisable(true);
     }
 
     @FXML
@@ -69,18 +82,16 @@ public class ShowPlayerController
             {
                 JSONObject config          = new JSONObject(new JSONTokener(new FileInputStream(inputFile)));
                 showFrames                 = ShowFrames.fromJson(config);
-                showTimer                  = new ShowTimer(showTimerListener, showFrames.getShowDuration(), 1.0, 10);
 
                 imageView.setFitWidth(showFrames.getWidth());
                 imageView.setFitHeight(showFrames.getHeight());
 
                 stage.setWidth(showFrames.getWidth());
-                stage.setHeight(showFrames.getHeight() + 51);
+                stage.setHeight(showFrames.getHeight() + 91);
 
                 setImageFor(0);
 
-                // TODO: move to play button
-                showTimer.start();
+                playButton.setDisable(false);
             }
             catch (FileNotFoundException e)
             {
@@ -99,18 +110,60 @@ public class ShowPlayerController
         }
     }
 
+    @FXML
+    private void playButtonPressed()
+    {
+        if (null == showTimer)
+        {
+            showTimer = new ShowTimer(showTimerListener, showFrames.getShowDuration(), 1.0, 10);
+        }
+
+        playButton.setDisable(true);
+        pauseButton.setDisable(false);
+        showTimer.start();
+    }
+
+    @FXML
+    private void pauseButtonPressed()
+    {
+        playButton.setDisable(false);
+        pauseButton.setDisable(true);
+        showTimer.pause();
+    }
+
     private final ShowTimer.Listener showTimerListener = new ShowTimer.Listener()
     {
         @Override
         public void onTick(int curTime)
         {
-            Platform.runLater(() -> setImageFor(curTime));
+            Platform.runLater(new Runnable()
+            {
+                @Override
+                public void run()
+                {
+                    int minutes = curTime / (1000 * 60);
+                    int seconds = (curTime - minutes * 1000 * 60) / 1000;
+                    int millis  = curTime % 1000;
+
+                    timeLabel.setText(String.format("%02d:%02d.%03d", minutes, seconds, millis));
+                    setImageFor(curTime);
+                }
+            });
         }
 
         @Override
         public void onDone()
         {
-            System.out.println("show is done");
+            Platform.runLater(new Runnable()
+            {
+                @Override
+                public void run()
+                {
+                    playButton.setDisable(false);
+                    pauseButton.setDisable(true);
+                }
+            });
+            showTimer = null;
         }
     };
 }
