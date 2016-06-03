@@ -3,7 +3,7 @@
   "height": 600,
   "frames": [
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -17,7 +17,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -31,7 +31,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -45,7 +45,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -59,7 +59,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -73,7 +73,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -87,7 +87,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -101,7 +101,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -115,7 +115,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -129,7 +129,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -143,7 +143,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -157,7 +157,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -171,7 +171,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -185,7 +185,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -199,7 +199,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -213,7 +213,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -227,7 +227,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -241,7 +241,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -255,7 +255,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -269,7 +269,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -283,7 +283,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -297,7 +297,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -311,7 +311,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -325,7 +325,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -339,7 +339,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -353,7 +353,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -367,7 +367,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -381,7 +381,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -395,7 +395,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -409,7 +409,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -423,7 +423,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -437,7 +437,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -451,7 +451,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -465,7 +465,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -479,7 +479,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -493,7 +493,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -507,7 +507,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -521,7 +521,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -535,7 +535,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -549,7 +549,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -563,7 +563,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -577,7 +577,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -591,7 +591,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -605,7 +605,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -619,7 +619,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -633,7 +633,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -647,7 +647,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -661,7 +661,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -675,7 +675,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -689,7 +689,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -703,7 +703,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -717,7 +717,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -731,7 +731,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -745,7 +745,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -759,7 +759,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -773,7 +773,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -787,7 +787,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -801,7 +801,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -815,7 +815,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -829,7 +829,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -843,7 +843,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -857,7 +857,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -871,7 +871,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -885,7 +885,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -899,7 +899,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -913,7 +913,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -927,7 +927,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -941,7 +941,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -955,7 +955,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -969,7 +969,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -983,7 +983,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -997,7 +997,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
@@ -1011,7 +1011,7 @@
       }
     },
     {
-      "duration": 20,
+      "duration": 100,
       "maskLayer": {
         "type": "ArcLayer",
         "config": {
