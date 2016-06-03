@@ -10,7 +10,7 @@
 
 <BorderPane fx:controller="com.constantbeta.showplayer.ShowPlayerController"
             xmlns:fx="http://javafx.com/fxml"
-            fx:id="root">
+            id="root">
 
     <top>
         <MenuBar>
@@ -24,20 +24,20 @@
     </top>
 
     <center>
-        <ImageView fx:id="imageView"/>
+        <ImageView id="imageView"/>
     </center>
 
     <bottom>
         <HBox alignment="CENTER">
-            <Button fx:id="playButton"
+            <Button id="playButton"
                     text="Play"
                     onAction="#playButtonPressed"/>
 
-            <Button fx:id="pauseButton"
+            <Button id="pauseButton"
                     text="Pause"
                     onAction="#pauseButtonPressed"/>
 
-            <Label fx:id="timeLabel"
+            <Label id="timeLabel"
                    text="00:00.000"/>
         </HBox>
     </bottom>

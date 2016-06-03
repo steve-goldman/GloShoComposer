@@ -1,18 +1,7 @@
 package com.constantbeta.showplayer;
 
 import com.constantbeta.frame.FrameMask;
-import com.constantbeta.frame.FrameMaskUtils;
-import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.json.JSONObject;
@@ -25,33 +14,16 @@ import java.io.FileNotFoundException;
 public class ShowPlayerController
 {
     private Stage      stage;
-
-    @FXML
-    private BorderPane root;
-
-    @FXML
-    private ImageView  imageView;
-
-    @FXML
-    private Button     playButton;
-
-    @FXML
-    private Button     pauseButton;
-
-    @FXML
-    private Label      timeLabel;
-
     private File       inputFile;
     private ShowFrames showFrames;
     private ShowTimer  showTimer;
-    private FrameMask  curFrameMask;
+
+    private ShowPlayerPresenter presenter;
 
     public void init(Stage stage)
     {
         this.stage = stage;
-        root.setBackground(new Background(new BackgroundFill(Color.CORNFLOWERBLUE, CornerRadii.EMPTY, Insets.EMPTY)));
-        playButton.setDisable(true);
-        pauseButton.setDisable(true);
+        this.presenter = new ShowPlayerPresenter(stage.getScene());
     }
 
     @FXML
@@ -82,16 +54,13 @@ public class ShowPlayerController
             {
                 JSONObject config          = new JSONObject(new JSONTokener(new FileInputStream(inputFile)));
                 showFrames                 = ShowFrames.fromJson(config);
+                FrameMask firstFrame       = showFrames.getFrameFor(0);
 
-                imageView.setFitWidth(showFrames.getWidth());
-                imageView.setFitHeight(showFrames.getHeight());
+                presenter.onFileOpened(firstFrame);
 
                 stage.setWidth(showFrames.getWidth());
                 stage.setHeight(showFrames.getHeight() + 91);
 
-                setImageFor(0);
-
-                playButton.setDisable(false);
                 showTimer = null;
             }
             catch (FileNotFoundException e)
@@ -101,34 +70,22 @@ public class ShowPlayerController
         }
     }
 
-    private void setImageFor(int elapsedTime)
-    {
-        FrameMask frameMask = showFrames.getFrameFor(elapsedTime);
-        if (curFrameMask != frameMask)
-        {
-            imageView.setImage(FrameMaskUtils.toFxImage(frameMask));
-            curFrameMask = frameMask;
-        }
-    }
-
     @FXML
     private void playButtonPressed()
     {
+        presenter.onPlayButtonPressed();
+
         if (null == showTimer)
         {
             showTimer = new ShowTimer(showTimerListener, showFrames.getShowDuration(), 1.0, 10);
         }
-
-        playButton.setDisable(true);
-        pauseButton.setDisable(false);
         showTimer.start();
     }
 
     @FXML
     private void pauseButtonPressed()
     {
-        playButton.setDisable(false);
-        pauseButton.setDisable(true);
+        presenter.onPauseButtonPressed();
         showTimer.pause();
     }
 
@@ -137,33 +94,14 @@ public class ShowPlayerController
         @Override
         public void onTick(int curTime)
         {
-            Platform.runLater(new Runnable()
-            {
-                @Override
-                public void run()
-                {
-                    int minutes = curTime / (1000 * 60);
-                    int seconds = (curTime - minutes * 1000 * 60) / 1000;
-                    int millis  = curTime % 1000;
-
-                    timeLabel.setText(String.format("%02d:%02d.%03d", minutes, seconds, millis));
-                    setImageFor(curTime);
-                }
-            });
+            FrameMask nextFrame = showFrames.getFrameFor(curTime);
+            presenter.onTimeChanged(curTime, nextFrame);
         }
 
         @Override
         public void onDone()
         {
-            Platform.runLater(new Runnable()
-            {
-                @Override
-                public void run()
-                {
-                    playButton.setDisable(false);
-                    pauseButton.setDisable(true);
-                }
-            });
+            presenter.onDone();
             showTimer = null;
         }
     };

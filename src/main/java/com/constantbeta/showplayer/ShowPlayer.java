@@ -18,12 +18,14 @@ public class ShowPlayer extends Application
 
         Parent root = fxmlLoader.load();
 
-        ((ShowPlayerController)fxmlLoader.getController()).init(primaryStage);
-
         primaryStage.setMinWidth(400);
         primaryStage.setMinHeight(400);
         primaryStage.setTitle("Show Player");
         primaryStage.setScene(new Scene(root));
+
+        ShowPlayerController controller = fxmlLoader.getController();
+        controller.init(primaryStage);
+
         primaryStage.show();
     }
 
