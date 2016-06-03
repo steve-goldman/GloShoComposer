@@ -1,4 +1,4 @@
-package com.constantbeta.frame.viewer;
+package com.constantbeta.frameviewer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

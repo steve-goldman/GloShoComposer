@@ -1,4 +1,4 @@
-package com.constantbeta.frame.viewer;
+package com.constantbeta.frameviewer;
 
 import com.constantbeta.frame.FrameMask;
 import com.constantbeta.frame.FrameMaskUtils;

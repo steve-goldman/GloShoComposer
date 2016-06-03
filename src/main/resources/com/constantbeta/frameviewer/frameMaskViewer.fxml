@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
 
-<BorderPane fx:controller="com.constantbeta.frame.viewer.Controller"
+<BorderPane fx:controller="com.constantbeta.frameviewer.Controller"
             xmlns:fx="http://javafx.com/fxml"
             fx:id="root">
 
