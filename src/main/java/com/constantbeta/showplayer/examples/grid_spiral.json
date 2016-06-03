@@ -1,0 +1,614 @@
+{
+  "width": 800,
+  "height": 600,
+  "frames": [
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 0,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 3,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 0
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 1,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 2
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+    {
+      "duration": 400,
+      "maskLayer": {
+        "type": "GridBoxLayer",
+        "config": {
+          "numRows": 4,
+          "numColumns": 4,
+          "row": 2,
+          "column": 1
+        }
+      }
+    },
+    {
+      "duration": 100,
+      "maskLayer": {
+        "type": "EmptyLayer",
+        "config": {}
+      }
+    },
+  ]
+}
