@@ -92,6 +92,7 @@ public class ShowPlayerController
                 setImageFor(0);
 
                 playButton.setDisable(false);
+                showTimer = null;
             }
             catch (FileNotFoundException e)
             {
