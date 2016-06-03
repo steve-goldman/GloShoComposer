@@ -24,7 +24,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class Controller
+public class FrameViewerController
 {
     private Stage      stage;
     private FrameMask  frameMask;
@@ -33,7 +33,7 @@ public class Controller
     private BorderPane root;
 
     @FXML
-    private ImageView  maskFrameImageView;
+    private ImageView  imageView;
 
     private File       inputFile;
 
@@ -91,9 +91,9 @@ public class Controller
 
                 frameMask                  = new FrameMask(width, height, maskLayer);
 
-                maskFrameImageView.setFitWidth(width);
-                maskFrameImageView.setFitHeight(height);
-                maskFrameImageView.setImage(FrameMaskUtils.toFxImage(frameMask));
+                imageView.setFitWidth(width);
+                imageView.setFitHeight(height);
+                imageView.setImage(FrameMaskUtils.toFxImage(frameMask));
 
                 stage.setWidth(width);
                 stage.setHeight(height + 51);

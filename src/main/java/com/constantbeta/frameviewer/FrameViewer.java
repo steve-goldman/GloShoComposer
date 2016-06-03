@@ -8,21 +8,21 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 
-public class FrameMaskViewer extends Application
+public class FrameViewer extends Application
 {
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        URL fxmlUrl           = getClass().getResource("frameMaskViewer.fxml");
+        URL fxmlUrl           = getClass().getResource("frameViewer.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlUrl);
 
         Parent root = fxmlLoader.load();
 
-        ((Controller)fxmlLoader.getController()).init(primaryStage);
+        ((FrameViewerController)fxmlLoader.getController()).init(primaryStage);
 
         primaryStage.setMinWidth(400);
         primaryStage.setMinHeight(400);
-        primaryStage.setTitle("Frame Mask Viewer");
+        primaryStage.setTitle("Frame Viewer");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

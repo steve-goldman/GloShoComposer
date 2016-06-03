@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
 
-<BorderPane fx:controller="com.constantbeta.frameviewer.Controller"
+<BorderPane fx:controller="com.constantbeta.frameviewer.FrameViewerController"
             xmlns:fx="http://javafx.com/fxml"
             fx:id="root">
 
@@ -21,7 +21,7 @@
     </top>
 
     <center>
-        <ImageView fx:id="maskFrameImageView"/>
+        <ImageView fx:id="imageView"/>
     </center>
 
 </BorderPane>
