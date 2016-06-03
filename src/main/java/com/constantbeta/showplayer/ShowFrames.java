@@ -11,15 +11,21 @@ import java.util.Arrays;
 
 public class ShowFrames
 {
+    private final int         width;
+    private final int         height;
     private final int[]       transitionTimes;
+    private final MaskLayer[] maskLayers;
     private final FrameMask[] frameMasks;
 
-    public ShowFrames(int[] transitionTimes, FrameMask[] frameMasks)
+    public ShowFrames(int width, int height, int[] transitionTimes, MaskLayer[] maskLayers)
     {
-        assert transitionTimes.length == frameMasks.length;
+        assert transitionTimes.length == maskLayers.length;
 
+        this.width           = width;
+        this.height          = height;
         this.transitionTimes = transitionTimes;
-        this.frameMasks = frameMasks;
+        this.maskLayers      = maskLayers;
+        this.frameMasks      = new FrameMask[maskLayers.length];
     }
 
     public static ShowFrames fromJson(JSONObject config)
@@ -33,18 +39,18 @@ public class ShowFrames
     {
         if (elapsedTime >= getShowDuration())
         {
-            return frameMasks[frameMasks.length - 1];
+            return getFrame(frameMasks.length - 1);
         }
 
         int i = Arrays.binarySearch(transitionTimes, elapsedTime);
 
         if (i >= 0)
         {
-            return frameMasks[i + 1];
+            return getFrame(i + 1);
         }
         else
         {
-            return frameMasks[-(i + 1)];
+            return getFrame(-(i + 1));
         }
     }
 
@@ -55,23 +61,35 @@ public class ShowFrames
 
     public int getWidth()
     {
-        return frameMasks[0].getWidth();
+        return width;
     }
 
     public int getHeight()
     {
-        return frameMasks[0].getHeight();
+        return height;
+    }
+
+    private FrameMask getFrame(int i)
+    {
+        if (null == frameMasks[i])
+        {
+            frameMasks[i] = new FrameMask(width, height, maskLayers[i]);
+        }
+
+        return frameMasks[i];
     }
 
     public static class Builder
     {
+        private int                        width;
+        private int                        height;
         private final ArrayList<Integer>   transitionTimesList = new ArrayList<>();
-        private final ArrayList<FrameMask> frameMasksList      = new ArrayList<>();
+        private final ArrayList<MaskLayer> maskLayersList      = new ArrayList<>();
 
         public Builder addJson(JSONObject config)
         {
-            int       width           = config.getInt("width");
-            int       height          = config.getInt("height");
+            width                     = config.getInt("width");
+            height                    = config.getInt("height");
             JSONArray framesJsonArray = config.getJSONArray("frames");
 
             for (int i = 0; i < framesJsonArray.length(); i++)
@@ -80,15 +98,14 @@ public class ShowFrames
                 int        duration        = frameJson.getInt("duration");
                 JSONObject maskLayerConfig = frameJson.getJSONObject("maskLayer");
                 MaskLayer  maskLayer       = MaskLayerFactory.create(width, height, maskLayerConfig);
-                FrameMask  frameMask       = new FrameMask(width, height, maskLayer);
 
-                addFrame(frameMask, duration);
+                addFrame(maskLayer, duration);
             }
 
             return this;
         }
 
-        public Builder addFrame(FrameMask frameMask, int duration)
+        public Builder addFrame(MaskLayer maskLayer, int duration)
         {
             final int lastTransitionTime;
             if (transitionTimesList.isEmpty())
@@ -101,23 +118,40 @@ public class ShowFrames
             }
 
             transitionTimesList.add(lastTransitionTime + duration);
-            frameMasksList.add(frameMask);
+            maskLayersList.add(maskLayer);
 
+            return this;
+        }
+
+        public Builder setWidth(int width)
+        {
+            this.width = width;
+            return this;
+        }
+
+        public Builder setHeight(int height)
+        {
+            this.height = height;
             return this;
         }
 
         public ShowFrames build()
         {
+            if (width == 0 || height == 0 || transitionTimesList.isEmpty())
+            {
+                throw new IllegalStateException();
+            }
+
             int[]       transitionTimes = new int[transitionTimesList.size()];
-            FrameMask[] frameMasks      = new FrameMask[frameMasksList.size()];
+            MaskLayer[] maskLayers      = new MaskLayer[maskLayersList.size()];
 
             for (int i = 0; i < transitionTimes.length; i++)
             {
                 transitionTimes[i] = transitionTimesList.get(i);
-                frameMasks[i]      = frameMasksList.get(i);
+                maskLayers[i]      = maskLayersList.get(i);
             }
 
-            return new ShowFrames(transitionTimes, frameMasks);
+            return new ShowFrames(width, height, transitionTimes, maskLayers);
         }
     }
 }
